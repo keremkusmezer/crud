@@ -8,7 +8,7 @@ import {
   JoinOption,
   JoinOptions,
   QueryOptions,
-} from '@rewiko/crud';
+} from '@oktein/crud';
 import {
   ComparisonOperator,
   ParsedRequestParams,
@@ -17,7 +17,7 @@ import {
   QuerySort,
   SCondition,
   SConditionKey,
-} from '@rewiko/crud-request';
+} from '@oktein/crud-request';
 import {
   ClassType,
   hasLength,
@@ -27,7 +27,7 @@ import {
   isObject,
   isUndefined,
   objKeys,
-} from '@rewiko/util';
+} from '@oktein/util';
 import { oO } from '@zmotivat0r/o0';
 import { plainToInstance } from 'class-transformer';
 import {

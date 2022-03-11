@@ -1,5 +1,5 @@
-import { RequestQueryBuilder } from '@rewiko/crud-request';
-import { isObjectFull } from '@rewiko/util';
+import { RequestQueryBuilder } from '@oktein/crud-request';
+import { isObjectFull } from '@oktein/util';
 import * as deepmerge from 'deepmerge';
 
 import { CrudGlobalConfig } from '../interfaces';

@@ -10,8 +10,8 @@ import {
   RequestQueryException,
   RequestQueryParser,
   SCondition,
-} from '@rewiko/crud-request';
-import { hasLength, isArrayFull, isFunction, isNil } from '@rewiko/util';
+} from '@oktein/crud-request';
+import { hasLength, isArrayFull, isFunction, isNil } from '@oktein/util';
 
 import { PARSED_CRUD_REQUEST_KEY } from '../constants';
 import { CrudActions } from '../enums';
