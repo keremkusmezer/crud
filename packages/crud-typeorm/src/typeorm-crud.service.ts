@@ -8,7 +8,7 @@ import {
   JoinOption,
   JoinOptions,
   QueryOptions,
-} from '@rewiko/crud';
+} from '@oktein/crud';
 import {
   ComparisonOperator,
   ParsedRequestParams,
@@ -17,7 +17,7 @@ import {
   QuerySort,
   SCondition,
   SConditionKey,
-} from '@rewiko/crud-request';
+} from '@oktein/crud-request';
 import {
   ClassType,
   hasLength,
@@ -27,7 +27,7 @@ import {
   isObject,
   isUndefined,
   objKeys,
-} from '@rewiko/util';
+} from '@oktein/util';
 import { oO } from '@zmotivat0r/o0';
 import { plainToClass } from 'class-transformer';
 import {
@@ -599,7 +599,13 @@ export class TypeOrmCrudService<T> extends CrudService<T> {
     const options = joinOptions[cond.field];
 
     if (!options) {
-      console.warn('relation "' + cond.field + '" not found in allowed relations in the controller. Did you mean to use one of these? [' + Object.keys(joinOptions).join(', ') + ']');
+      console.warn(
+        'relation "' +
+          cond.field +
+          '" not found in allowed relations in the controller. Did you mean to use one of these? [' +
+          Object.keys(joinOptions).join(', ') +
+          ']',
+      );
       return true;
     }
 
@@ -829,7 +835,7 @@ export class TypeOrmCrudService<T> extends CrudService<T> {
      */
     const safeFieldName = field.replace(/./g, '_');
     const index = `${safeFieldName}${time[0]}${time[1]}`;
-    
+
     const args = [
       { field, operator: isNull(value) ? '$isnull' : operator, value },
       index,

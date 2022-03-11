@@ -6,7 +6,7 @@ import {
   CrudRequest,
   ParsedRequest,
   Override,
-} from '@rewiko/crud';
+} from '@oktein/crud';
 
 import { User } from './user.entity';
 import { UsersService } from './users.service';

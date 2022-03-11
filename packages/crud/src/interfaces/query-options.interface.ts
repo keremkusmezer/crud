@@ -1,7 +1,7 @@
 import {
   QueryFields,
   QuerySort,
-} from '@rewiko/crud-request/lib/types/request-query.types';
+} from '@oktein/crud-request/lib/types/request-query.types';
 
 import { QueryFilterOption } from '../types';
 

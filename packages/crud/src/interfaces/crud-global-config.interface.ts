@@ -1,4 +1,4 @@
-import { RequestQueryBuilderOptions } from '@rewiko/crud-request';
+import { RequestQueryBuilderOptions } from '@oktein/crud-request';
 
 import { AuthGlobalOptions } from './auth-options.interface';
 import { OperatorsOptions } from './operators-options.interface';
