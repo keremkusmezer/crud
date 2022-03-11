@@ -1,7 +1,7 @@
 {
   "name": "@oktein/crud",
   "description": "NestJs CRUD for RESTful APIs",
-  "version": "5.1.5",
+  "version": "5.1.6",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -40,8 +40,8 @@
     "build": "npx tsc -b"
   },
   "dependencies": {
-    "@oktein/crud-request": "^5.1.5",
-    "@oktein/util": "^5.1.5",
+    "@oktein/crud-request": "^5.1.6",
+    "@oktein/util": "^5.1.6",
     "deepmerge": "^3.2.0",
     "pluralize": "^8.0.0"
   },
@@ -49,5 +49,5 @@
     "class-transformer": "*",
     "class-validator": "*"
   },
-  "gitHead": "0437bbf47dd9fe550374af40591e16745f2c987c"
+  "gitHead": "b140c0a460cbcd425a2e586c1915e54eccc8bdb3"
 }
